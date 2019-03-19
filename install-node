@@ -1,0 +1,106 @@
+CentOS Linux release 7.6.1810 (Core) 
+
+wget https://npm.taobao.org/mirrors/node/v8.0.0/node-v8.0.0-linux-x64.tar.xz
+
+tar xvf node-v8.0.0-linux-x64.tar.xz 
+
+vim /etc/profile
+
+export NODE_HOME=/usr/local/node
+export PATH=$PATH:$NODE_HOME/bin 
+export NODE_PATH=$NODE_HOME/lib/node_modules
+
+mv node-v8.0.0-linux-x64 /usr/local/node
+
+source /etc/profile
+
+npm -v
+
+npm get registry 
+
+npm config set registry http://registry.npm.taobao.org/
+
+npm install gitbook-cli -g
+
+mkdir test-book
+
+cd test-book
+
+gitbook init
+
+gitbook serve 
+
+
+
+
+
+calibre   install
+
+https://download.calibre-ebook.com/
+
+wget https://download.calibre-ebook.com/3.40.1/calibre-3.40.1-x86_64.txz
+
+mkdir -p /opt/calibre
+tar xvf  calibre-3.40.1-x86_64.txz  -C /opt/calibre
+/opt/calibre/calibre_postinstall
+	ImportError: cannot import name QImage
+
+
+
+yum -y install ImageMagick
+/opt/calibre/calibre_postinstall
+ImportError: cannot import name QWebView
+
+
+yum -y install qt5-*
+/opt/calibre/calibre_postinstall
+
+
+yum -y install bash-completion
+/opt/calibre/calibre_postinstall
+OSError: [Errno 2] No such file or directory
+
+
+yum -y install PyQt*
+/opt/calibre/calibre_postinstall
+OSError: [Errno 2] No such file or directory
+
+
+yum -y install  xdg-utils
+/opt/calibre/calibre_postinstall
+
+
+Creating symlinks...
+	Symlinking /opt/calibre/lrf2lrs to /usr/bin/lrf2lrs
+	Symlinking /opt/calibre/calibre-debug to /usr/bin/calibre-debug
+	Symlinking /opt/calibre/ebook-meta to /usr/bin/ebook-meta
+	Symlinking /opt/calibre/calibre-smtp to /usr/bin/calibre-smtp
+	Symlinking /opt/calibre/ebook-polish to /usr/bin/ebook-polish
+	Symlinking /opt/calibre/markdown-calibre to /usr/bin/markdown-calibre
+	Symlinking /opt/calibre/ebook-convert to /usr/bin/ebook-convert
+	Symlinking /opt/calibre/calibre-server to /usr/bin/calibre-server
+	Symlinking /opt/calibre/ebook-viewer to /usr/bin/ebook-viewer
+	Symlinking /opt/calibre/ebook-edit to /usr/bin/ebook-edit
+	Symlinking /opt/calibre/web2disk to /usr/bin/web2disk
+	Symlinking /opt/calibre/calibre-customize to /usr/bin/calibre-customize
+	Symlinking /opt/calibre/calibre to /usr/bin/calibre
+	Symlinking /opt/calibre/lrs2lrf to /usr/bin/lrs2lrf
+	Symlinking /opt/calibre/fetch-ebook-metadata to /usr/bin/fetch-ebook-metadata
+	Symlinking /opt/calibre/lrfviewer to /usr/bin/lrfviewer
+	Symlinking /opt/calibre/calibredb to /usr/bin/calibredb
+	Symlinking /opt/calibre/ebook-device to /usr/bin/ebook-device
+	Symlinking /opt/calibre/calibre-parallel to /usr/bin/calibre-parallel
+Setting up command-line completion...
+Installing zsh completion to: /usr/share/zsh/site-functions/_calibre
+Installing bash completion to: /usr/share/bash-completion/completions/calibre
+Setting up desktop integration...
+Creating un-installer: /usr/bin/calibre-uninstall
+
+
+
+
+cd test-book
+gitbook pdf ./ ./test-book.pdf
+gitbook  epub  ./ ./test-book.epub
+
+gitbook  mobi  ./ ./test-book.mobi

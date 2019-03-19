@@ -1,0 +1,132 @@
+https://zhilidali.github.io/gitbook/01%E7%BB%88%E7%AB%AF%E5%B7%A5%E5%85%B7.html
+
+https://toolchain.gitbook.com/ebook.html
+
+http://www.myciscolab.net/ansible.html
+
+
+cat book.json 
+{
+    "styles": {
+        "website": "styles/website.css"
+    },
+    "links": {
+        "home": null,
+        "about": false,
+        "issues": false,
+        "contribute": false,
+        "sharing": {
+            "google": false,
+            "facebook": false,
+            "twitter": false
+        }
+    }
+
+}
+
+
+
+
+
+cat book.json 
+{
+
+"plugins": [
+	    "search",
+	    "theme-default",
+	    "-sharing"
+],
+
+    "styles": {
+        "website": "styles/website.css"
+    },
+    "links": {
+        "home": null,
+        "about": false,
+        "issues": false,
+        "contribute": false,
+        "sharing": {
+            "google": false,
+            "facebook": false,
+            "twitter": false
+        }
+    }
+
+}
+
+
+
+
+
+ cat book.json 
+{
+
+"plugins": [
+	    "-search",
+	    "theme-default",
+	    "-sharing",
+	    "-lunr",
+	    "-fontsettings",
+	    "-livereload",
+	    "-highlight"
+]
+
+
+}
+
+
+
+don't show Published with GitBook
+
+进入 gitbook 项目所在目录
+
+mkdir styles/
+
+cat > styles/website.css <<  EOF
+.gitbook-link {
+    display: none !important;
+}
+EOF
+
+
+
+
+
+
+
+
+
+
+cat >  book.json << EOF
+{
+"plugins": [
+            "-search",
+            "-sharing",
+            "theme-default",
+            "-lunr",
+            "-fontsettings",
+            "-livereload",
+            "-highlight"
+],
+
+
+    "styles": {
+        "website": "styles/website.css"
+    }
+
+}
+EOF
+
+
+
+gitbook build
+gitbook serve
+
+
+
+
+
+
+
+
+
