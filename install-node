@@ -36,6 +36,10 @@ gitbook serve
 
 calibre   install
 
+
+yum -y install ImageMagick  qt5-*   bash-completion PyQt* xdg-utils
+
+
 https://download.calibre-ebook.com/
 
 wget https://download.calibre-ebook.com/3.40.1/calibre-3.40.1-x86_64.txz
@@ -43,7 +47,38 @@ wget https://download.calibre-ebook.com/3.40.1/calibre-3.40.1-x86_64.txz
 mkdir -p /opt/calibre
 tar xvf  calibre-3.40.1-x86_64.txz  -C /opt/calibre
 /opt/calibre/calibre_postinstall
-	ImportError: cannot import name QImage
+
+
+
+Creating symlinks...
+	Symlinking /opt/calibre/calibre-server to /usr/bin/calibre-server
+	Symlinking /opt/calibre/ebook-convert to /usr/bin/ebook-convert
+	Symlinking /opt/calibre/markdown-calibre to /usr/bin/markdown-calibre
+	Symlinking /opt/calibre/lrs2lrf to /usr/bin/lrs2lrf
+	Symlinking /opt/calibre/fetch-ebook-metadata to /usr/bin/fetch-ebook-metadata
+	Symlinking /opt/calibre/calibre to /usr/bin/calibre
+	Symlinking /opt/calibre/calibre-smtp to /usr/bin/calibre-smtp
+	Symlinking /opt/calibre/ebook-viewer to /usr/bin/ebook-viewer
+	Symlinking /opt/calibre/lrf2lrs to /usr/bin/lrf2lrs
+	Symlinking /opt/calibre/calibredb to /usr/bin/calibredb
+	Symlinking /opt/calibre/lrfviewer to /usr/bin/lrfviewer
+	Symlinking /opt/calibre/ebook-edit to /usr/bin/ebook-edit
+	Symlinking /opt/calibre/ebook-device to /usr/bin/ebook-device
+	Symlinking /opt/calibre/web2disk to /usr/bin/web2disk
+	Symlinking /opt/calibre/ebook-polish to /usr/bin/ebook-polish
+	Symlinking /opt/calibre/calibre-parallel to /usr/bin/calibre-parallel
+	Symlinking /opt/calibre/calibre-customize to /usr/bin/calibre-customize
+	Symlinking /opt/calibre/ebook-meta to /usr/bin/ebook-meta
+	Symlinking /opt/calibre/calibre-debug to /usr/bin/calibre-debug
+Setting up command-line completion...
+Installing zsh completion to: /usr/share/zsh/vendor-completions/_calibre
+Installing bash completion to: /usr/share/bash-completion/completions/calibre
+Setting up desktop integration...
+Creating un-installer: /usr/bin/calibre-uninstall
+
+
+
+
 
 
 
@@ -70,31 +105,6 @@ yum -y install  xdg-utils
 /opt/calibre/calibre_postinstall
 
 
-Creating symlinks...
-	Symlinking /opt/calibre/lrf2lrs to /usr/bin/lrf2lrs
-	Symlinking /opt/calibre/calibre-debug to /usr/bin/calibre-debug
-	Symlinking /opt/calibre/ebook-meta to /usr/bin/ebook-meta
-	Symlinking /opt/calibre/calibre-smtp to /usr/bin/calibre-smtp
-	Symlinking /opt/calibre/ebook-polish to /usr/bin/ebook-polish
-	Symlinking /opt/calibre/markdown-calibre to /usr/bin/markdown-calibre
-	Symlinking /opt/calibre/ebook-convert to /usr/bin/ebook-convert
-	Symlinking /opt/calibre/calibre-server to /usr/bin/calibre-server
-	Symlinking /opt/calibre/ebook-viewer to /usr/bin/ebook-viewer
-	Symlinking /opt/calibre/ebook-edit to /usr/bin/ebook-edit
-	Symlinking /opt/calibre/web2disk to /usr/bin/web2disk
-	Symlinking /opt/calibre/calibre-customize to /usr/bin/calibre-customize
-	Symlinking /opt/calibre/calibre to /usr/bin/calibre
-	Symlinking /opt/calibre/lrs2lrf to /usr/bin/lrs2lrf
-	Symlinking /opt/calibre/fetch-ebook-metadata to /usr/bin/fetch-ebook-metadata
-	Symlinking /opt/calibre/lrfviewer to /usr/bin/lrfviewer
-	Symlinking /opt/calibre/calibredb to /usr/bin/calibredb
-	Symlinking /opt/calibre/ebook-device to /usr/bin/ebook-device
-	Symlinking /opt/calibre/calibre-parallel to /usr/bin/calibre-parallel
-Setting up command-line completion...
-Installing zsh completion to: /usr/share/zsh/site-functions/_calibre
-Installing bash completion to: /usr/share/bash-completion/completions/calibre
-Setting up desktop integration...
-Creating un-installer: /usr/bin/calibre-uninstall
 
 
 
