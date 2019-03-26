@@ -30,7 +30,7 @@ gitbook init
 
 gitbook serve 
 
-
+gitbook serve --port 80
 
 
 
