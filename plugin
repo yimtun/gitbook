@@ -1,0 +1,23 @@
+npm install gitbook-plugin-toggle-chapters
+npm install gitbook-plugin-expandable-chapters
+
+
+{
+"plugins": [
+            "search",
+            "-sharing",
+            "theme-default",
+            "lunr",
+            "fontsettings",
+            "livereload",
+            "highlight",
+            "-toggle-chapters",
+	    "expandable-chapters"
+],
+
+
+    "styles": {
+        "website": "styles/website.css"
+    }
+
+}
