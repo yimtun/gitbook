@@ -106,7 +106,8 @@ cat >  book.json << EOF
             "-lunr",
             "-fontsettings",
             "-livereload",
-            "-highlight"
+            "-highlight",
+	    "expandable-chapters"
 ],
 
 
@@ -122,6 +123,27 @@ EOF
 gitbook build
 gitbook serve
 
+
+
+
+{
+"plugins": [
+            "-search",
+            "-sharing",
+            "theme-default",
+            "-lunr",
+            "-fontsettings",
+            "livereload",
+            "-highlight",
+            "expandable-chapters"
+],
+
+
+    "styles": {
+        "website": "styles/website.css"
+    }
+
+}
 
 
 
