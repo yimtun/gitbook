@@ -26,3 +26,54 @@ npm install gitbook-plugin-expandable-chapters
 offline
 
 npm install  node_modules/gitbook-plugin-expandable-chapters
+
+npm install gitbook-plugin-toc
+
+
+gitbook   pdf -add-toc .  ./gitbook-elk.pdf
+
+
+
+
+
+
+
+
+
+
+{
+"plugins": [
+            "-search",
+            "-sharing",
+            "theme-default",
+            "-lunr",
+            "-fontsettings",
+            "livereload",
+            "-highlight",
+            "expandable-chapters",
+            "toc"
+],
+
+"pdf": {
+        "pageNumbers": true
+    },
+
+"pluginsConfig": {
+        "toc": {
+            "display": "none",
+            "addClass": true,
+            "className": "toc"
+        }
+    },
+
+
+
+    "styles": {
+        "website": "styles/website.css"
+    }
+
+}
+
+
+
+
