@@ -21,3 +21,8 @@ npm install gitbook-plugin-expandable-chapters
     }
 
 }
+
+
+offline
+
+npm install  node_modules/gitbook-plugin-expandable-chapters
