@@ -32,7 +32,7 @@ npm install gitbook-plugin-toc
 
 gitbook   pdf -add-toc .  ./gitbook-elk.pdf
 
-
+gitbook install
 
 
 

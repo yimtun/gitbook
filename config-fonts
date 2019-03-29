@@ -1,0 +1,26 @@
+yum -y install fontconfig
+
+ls /usr/share/fontconfig/
+
+fc-list
+
+mkdir  /usr/share/fonts/chinese
+
+
+Windows/Fonts
+
+
+chmod -R 755 /usr/share/fonts/chinese
+
+yum -y install ttmkfdir
+
+ttmkfdir -e /usr/share/X11/fonts/encodings/encodings.dir
+
+
+vi /etc/fonts/fonts.conf
+
+<dir>/usr/share/fonts/chinese</dir>
+
+
+gitbook pdf  . test.pdf 
+查看 中文可以显示

@@ -24,6 +24,8 @@ npm install gitbook-cli -g
 
 mkdir test-book
 
+npm config set registry=http://registry.npmjs.org
+
 cd test-book
 
 gitbook init
